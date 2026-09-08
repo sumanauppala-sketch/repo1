@@ -37,7 +37,7 @@ module "cloud-storage-1" {
   ]
 }
 module "service-accounts-1" {
-  source     = "github.com/terraform-google-modules/terraform-google-service-accounts//modules/simple-sa?ref=v4.7.0"
+  source     = "./modules/service-accounts-1"
   project_id = var.service-accounts-1_project_id
   name       = var.service-accounts-1_name
 }

@@ -4,16 +4,16 @@
 # Application Template: projects/sbd-test-project-501910/locations/us-central1/spaces/default-space/applicationTemplates/app-template-comp-02-09
 
 provider "google" {
+  billing_project = "sbd-test-project-501910"
   default_labels = {
     goog-adc-tf-deployment = "export"
   }
-  billing_project       = "sbd-test-project-501910"
   user_project_override = true
 }
 provider "google-beta" {
+  billing_project = "sbd-test-project-501910"
   default_labels = {
     goog-adc-tf-deployment = "export"
   }
-  billing_project       = "sbd-test-project-501910"
   user_project_override = true
 }
