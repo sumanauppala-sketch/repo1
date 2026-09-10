@@ -32,7 +32,7 @@ module "service-accounts-1" {
   name       = var.service-accounts-1_name
 }
 module "cloud-storage-1" {
-  source        = "github.com/terraform-google-modules/terraform-google-cloud-storage//modules/simple_bucket?ref=v12.3.0"
+  source        = "./modules/cloud-storage-1"
   project_id    = var.cloud-storage-1_project_id
   location      = var.cloud-storage-1_location
   name          = var.cloud-storage-1_name
