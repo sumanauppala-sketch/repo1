@@ -4,7 +4,7 @@
 # Application Template: projects/sbd-test-project-501910/locations/us-central1/spaces/default-space/applicationTemplates/simple-template-two
 
 module "cloud-storage-1" {
-  source        = "github.com/terraform-google-modules/terraform-google-cloud-storage//modules/simple_bucket?ref=v12.3.0"
+  source        = "./modules/cloud-storage-1"
   project_id    = var.cloud-storage-1_project_id
   location      = var.cloud-storage-1_location
   name          = var.cloud-storage-1_name

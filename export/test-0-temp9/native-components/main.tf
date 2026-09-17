@@ -3,7 +3,7 @@
 # Please make changes to the application template instead.
 
 module "cloud-run-1" {
-  source                        = "github.com/GoogleCloudPlatform/terraform-google-cloud-run//modules/v2?ref=v0.34.0"
+  source                        = "./modules/cloud-run-1"
   project_id                    = var.cloud-run-1_project_id
   location                      = var.cloud-run-1_location
   service_name                  = var.cloud-run-1_service_name
@@ -26,12 +26,12 @@ module "cloud-run-1" {
   }
 }
 module "service-accounts-1" {
-  source     = "github.com/terraform-google-modules/terraform-google-service-accounts//modules/simple-sa?ref=v5.0.0"
+  source     = "./modules/service-accounts-1"
   project_id = var.service-accounts-1_project_id
   name       = var.service-accounts-1_name
 }
 module "service-accounts-2" {
-  source     = "github.com/terraform-google-modules/terraform-google-service-accounts//modules/simple-sa?ref=v5.0.0"
+  source     = "./modules/service-accounts-2"
   project_id = var.service-accounts-2_project_id
   name       = var.service-accounts-2_name
 }
