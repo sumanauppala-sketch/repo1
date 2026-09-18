@@ -1,0 +1,14 @@
+root_modules:
+- components:
+  - projects/ai-app-poc-producer/locations/us-central1/spaces/default-space/applicationTemplates/j-row64-comp-app-tmpl/components/j-row64-custom-comp
+  id: native-components
+  input_variables:
+  - value: null
+    variable: j-row64-custom-comp_constraint
+    variable_type: string
+  - value: null
+    variable: j-row64-custom-comp_policy_for
+    variable_type: string
+  - value: null
+    variable: j-row64-custom-comp_project_id
+    variable_type: string
