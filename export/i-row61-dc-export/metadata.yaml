@@ -1,0 +1,11 @@
+root_modules:
+- components:
+  - projects/ai-app-poc-producer/locations/us-central1/spaces/default-space/applicationTemplates/i-row61-comp-tpl/components/i-row61-comp1
+  id: native-components
+  input_variables:
+  - value: null
+    variable: i-row61-comp1_name
+    variable_type: string
+  - value: null
+    variable: i-row61-comp1_project_id
+    variable_type: string
