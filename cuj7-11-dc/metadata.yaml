@@ -1,0 +1,11 @@
+root_modules:
+- components:
+  - projects/sbd-test-project-501910/locations/us-central1/spaces/default-space/applicationTemplates/bb-c7b-byoc-dc/components/custom-dc-1
+  id: native-components
+  input_variables:
+  - value: null
+    variable: custom-dc-1_name
+    variable_type: string
+  - value: null
+    variable: custom-dc-1_project_id
+    variable_type: string
